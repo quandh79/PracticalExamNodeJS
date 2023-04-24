@@ -1,6 +1,6 @@
-const Student = require("../models/user");
+const User = require("../models/user");
 exports.get = function(req,res){
-    Student.find({}).then(rs=>{
+    User.find({}).then(rs=>{
         res.render("user/list",{
             items: rs
         });
