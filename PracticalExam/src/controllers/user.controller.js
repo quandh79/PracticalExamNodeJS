@@ -8,3 +8,15 @@ exports.get = function(req,res){
         res.send(err);
     });
 }
+exports.createForm = (req,res)=>{
+    res.render("user/form");
+};
+exports.save = (req,res)=>{
+    let s = req.body;
+    let newUser = new User(s);
+    newUser.save().then(rs=>{
+        res.redirect("/");
+    }).catch(err=>{
+        res.send(err);
+    })
+};
