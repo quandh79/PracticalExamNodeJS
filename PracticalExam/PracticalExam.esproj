@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.62-alpha">
+  <PropertyGroup>
+    <!-- Command to run on project build -->
+    <BuildCommand>
+    </BuildCommand>
+    <!-- Command to run on project clean -->
+    <CleanCommand>
+    </CleanCommand>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\controller\" />
+    <Folder Include="src\models\" />
+    <Folder Include="src\routes\" />
+    <Folder Include="views\" />
+    <Folder Include="public\" />
+  </ItemGroup>
+</Project>
